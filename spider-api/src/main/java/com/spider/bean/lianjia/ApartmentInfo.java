@@ -19,6 +19,8 @@ public class ApartmentInfo {
     private String imageUrl; //房屋图片
     private String subwayLine; //地铁线
     private String subwayStation;//站
+    private String districtName;//区 例:东城区
+    private String positionName;//具体位置 例:安定门
 
     public Integer getId() {
         return id;
@@ -108,6 +110,22 @@ public class ApartmentInfo {
         this.subwayStation = subwayStation;
     }
 
+    public String getDistrictName() {
+        return districtName;
+    }
+
+    public void setDistrictName(String districtName) {
+        this.districtName = districtName;
+    }
+
+    public String getPositionName() {
+        return positionName;
+    }
+
+    public void setPositionName(String positionName) {
+        this.positionName = positionName;
+    }
+
     @Override
     public String toString() {
         return "ApartmentInfo{" +
@@ -122,6 +140,8 @@ public class ApartmentInfo {
                 ", imageUrl='" + imageUrl + '\'' +
                 ", subwayLine='" + subwayLine + '\'' +
                 ", subwayStation='" + subwayStation + '\'' +
+                ", districtName='" + districtName + '\'' +
+                ", positionName='" + positionName + '\'' +
                 '}';
     }
 }
